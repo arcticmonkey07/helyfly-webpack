@@ -1,0 +1,56 @@
+.header-top
+  display: flex
+  margin-top: 40px
+  margin-bottom: 38px
+  @media screen and (max-width: $laptop)
+    margin-top: 30px
+    margin-bottom: 20px
+  @media screen and (max-width: $mobile)
+    margin-top: 23px
+    margin-bottom: 17px
+
+.header-top__logo
+  display: block
+  width: 128px
+  height: 23px
+  background-image: url('/assets/img/logo.svg')
+  background-repeat: no-repeat
+  @media screen and (max-width: $mobile)
+    width: 86px
+    height: 17px
+
+.header-top__tel-text
+  margin-left: 35px
+  font-size: 14px
+  line-height: 20px
+  color: #B3B3B3
+  @media screen and (max-width: $laptop)
+    font-size: 16px
+  @media screen and (max-width: $mobile)
+    display: none
+
+.header-top__tel
+  margin-left: 4px
+  font-family: Montserrat, "Arial", sans-serif
+  font-size: 14px
+  line-height: 20px
+  color: #37373F
+  @media screen and (max-width: $laptop)
+    font-size: 16px
+  @media screen and (max-width: $mobile)
+    font-size: 0
+    width: 20px
+    height: 20px
+    margin-top: -3px
+    margin-left: auto
+    background-image: url('/assets/img/user.svg');
+
+.header-top__mobile-link
+  display: none
+  @media screen and (max-width: $mobile)
+    display: block
+    margin-left: 44px
+    font-weight: normal
+    font-size: 16px
+    line-height: 20px
+    color: #5286EC

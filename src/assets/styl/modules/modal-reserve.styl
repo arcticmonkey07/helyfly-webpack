@@ -1,0 +1,246 @@
+.modal__background
+  position: absolute
+  top: -23px
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: 3
+  background: #000000
+  opacity: 0.5
+
+.modal-reserve
+  position: absolute
+  top: 231px
+  left: 50%
+  z-index: 4
+  width: 615px
+  margin-left: -307px
+  padding: 40px 97px
+  background: #FFFFFF
+  border-radius: 6px
+  box-sizing: border-box
+  @media screen and (max-width: $mobile-large)
+    width: 350px
+    margin-left: -173px
+    padding-top: 0
+    padding-left: 20px
+    padding-right: 20px
+    padding-bottom: 40px
+  @media screen and (max-width: $mobile)
+    width: 290px
+    margin: 0
+    margin-left: -147px
+  @media screen and (max-width: 320px)
+    left: 15px
+    width: 290px
+    margin: 0
+    padding-left: 10px
+    padding-right: 10px
+
+.modal__close
+  position: absolute
+  top: 22px
+  right: 23px
+  width: 21px
+  height: 21px
+  background-image: url('/assets/img/Close.svg');
+  cursor: pointer
+  @media screen and (max-width: $mobile)
+    top: 16px
+    right: 13px
+    width: 21px
+    height: 21px
+
+
+.modal__header
+  margin-top: 19px
+  margin-bottom: 26px
+  font-weight: 600
+  font-size: 24px
+  line-height: 33px
+  text-align: center
+  @media screen and (max-width: $mobile)
+    margin-top: 49px
+    margin-bottom: 29px
+    font-size: 20px
+    line-height: 30px
+
+.modal__label
+  display: block
+  font-weight: 500
+  font-size: 17px
+  line-height: 20px
+  &--color
+    color: red
+
+.modal__input
+  display: block
+  width: 420px
+  height: 44px
+  margin-top: 10px
+  margin-bottom: 10px
+  padding-left: 18px
+  padding-right: 20px
+  border: 1px solid #C7C7C7
+  box-sizing: border-box
+  border-radius: 3px
+  @media screen and (max-width: $mobile-large)
+    width: 100%
+    height: 44px
+    margin-bottom: 14px
+  @media screen and (max-width: $mobile)
+    width: 250px
+    height: 44px
+    margin-bottom: 14px
+  @media screen and (max-width: 320px)
+    width: 270px
+  &::-webkit-input-placeholder
+    color: #C7C7C7
+    font-size: 17px
+  &-surname
+    margin-bottom: 20px
+  &-tel
+    margin-bottom: 23px
+
+.modal__input-date
+  position: relative
+  &::-webkit-calendar-picker-indicator
+    color: transparent
+    opacity: 1
+  &:after
+    content: ''
+    position: absolute
+    top: 8px
+    right: 13px
+    width: 27px;
+    height: 27px
+    border: 0.5px solid #C4C4C4
+    box-sizing: border-box
+    border-radius: 3px
+    background-image: url('/assets/img/calendar-modal.svg')
+    background-repeat: no-repeat
+    background-position: center
+
+.modal__input-card-number
+  margin-bottom: 0
+  border-radius: 3px 3px 0 0
+  @media screen and (max-width: $mobile-large)
+    margin-bottom: 0
+  @media screen and (max-width: $mobile)
+    width: 267px
+    height: 46.5px
+
+.modal__input-validity
+  display: block
+  float: left
+  width: 211px
+  height: 44px
+  padding-left: 18px
+  border: 1px solid #C7C7C7
+  border-top: transparent
+  box-sizing: border-box
+  border-radius: 0 0 0 3px
+  @media screen and (max-width: $mobile-large)
+    width: 100%
+    height: 48.5px
+    border-radius: 0 0 0 0
+  @media screen and (max-width: $mobile)
+    width: 267px
+  &::-webkit-input-placeholder
+    color: #C7C7C7
+    font-size: 17px
+
+.modal__input-cvv
+  display: block
+  width: 209px
+  height: 44px
+  padding-left: 18px
+  border: 1px solid #C7C7C7
+  border-top: transparent
+  border-left: transparent
+  box-sizing: border-box
+  border-radius: 0 0 3px 0
+  @media screen and (max-width: $mobile-large)
+    width: 100%
+    height: 48px
+    border-left: 1px solid #C7C7C7
+    border-radius: 0 0 3px 3px
+  @media screen and (max-width: $mobile)
+    width: 267px
+  &::-webkit-input-placeholder
+    color: #C7C7C7
+    font-size: 17px
+
+.modal__label-agree
+  position: relative
+  display: block
+  margin-top: 37px
+  margin-bottom: 24px
+  @media screen and (max-width: $mobile)
+    margin-top: 25px
+    margin-bottom: 27px
+
+.modal__input-agree:checked + .modal__input-agree-indicator
+  background-image: url('/assets/img/checkbox.svg')
+  background-repeat: no-repeat
+  background-position: center
+
+.modal__input-agree-indicator
+  position: absolute
+  top: 0
+  left: 0
+  width: 16px
+  height: 16px
+  background: #FC9B09
+  box-shadow: 0 0 3px rgba(252, 155, 9, 0.6)
+  border-radius: 2px
+  cursor: pointer
+
+.modal__label-agree-text
+  display: block
+  width: 350px
+  padding-left: 27px
+  font-weight: normal
+  font-size: 18px
+  line-height: 19px
+  cursor: pointer
+  @media screen and (max-width: $mobile-large)
+    width: 270px
+  @media screen and (max-width: $mobile)
+    width: 215px
+
+.modal__confirm-button
+  display: block
+  width: 390px
+  height: 72px
+  margin: 0 auto
+  font-weight: 600
+  font-size: 17px
+  line-height: 20px
+  background: #FC9B09
+  border: none
+  border-radius: 3px
+  color: #ffffff
+  cursor: pointer
+  @media screen and (max-width: $mobile-large)
+    width: 100%
+    height: 50px
+    font-size: 15px
+  @media screen and (max-width: $mobile)
+    width: 250px
+  &:hover
+    background: #fcae1f
+    color: #dfdfdf
+  &:active
+    background: #a25c09
+    color: #a8a8a8
+
+.modal-show-animate
+  animation: bounceIn 1s
+
+@keyframes bounceIn {
+  0% {transform: translateY(-2000px);}
+  70% {transform: translateY(30px);}
+  90% {transform: translateY(-10px);}
+  100% {transform: translateY(0px);}
+}

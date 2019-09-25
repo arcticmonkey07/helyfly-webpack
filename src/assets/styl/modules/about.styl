@@ -1,0 +1,152 @@
+.about
+  position: relative
+  display: flex
+  margin-bottom: 48px
+  padding-bottom: 16px
+  @media screen and (max-width: $mobile-large)
+    flex-direction: column
+    margin-bottom: 0
+  @media screen and (max-width: $mobile)
+    margin-bottom: 14px
+  &:after
+    content: ''
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 1140px
+    height: 1px
+    background-color: #C7C7C7
+    @media screen and (max-width: $laptop)
+      width: 960px
+    @media screen and (max-width: $tablet)
+      width: 730px
+    @media screen and (max-width: $mobile-large)
+      width: 385px
+    @media screen and (max-width: $mobile)
+      width: 0
+
+.about__text-container
+  width: 585px
+  @media screen and (max-width: $mobile-large)
+    order: 2
+    width: 100%
+  @media screen and (max-width: $mobile)
+    width: 290px
+
+.about__header
+  margin: 0
+  font-weight: 500
+  font-size: 21px
+  line-height: 26px
+  @media screen and (max-width: $mobile-large)
+    margin-left: 20px
+
+.about__text
+  margin-top: 12px
+  margin-bottom: 6px
+  font-weight: normal
+  font-size: 18px
+  line-height: 24px
+  &--bold
+    font-weight: 600
+
+.about__text--hidden
+  display: none
+
+.about__text:first-of-type
+    margin-bottom: 26px
+
+.about__button
+  position: relative
+  margin-bottom: 36px
+  padding: 0
+  font-weight: 500
+  font-size: 18px
+  line-height: 23px
+  color: #5286EC
+  background-color: transparent
+  border: none
+  cursor: pointer
+  @media screen and (max-width: $mobile)
+    margin-top: 38px
+    margin-bottom: 26px
+  &:last-of-type
+    @media screen and (max-width: $mobile)
+      margin-top: 14px
+  &:after
+    content: ''
+    position: absolute
+    top: 10px
+    right: -21px
+    width: 11px
+    height: 6px
+    background-image: url('/assets/img/arrow.svg');
+  &:hover
+    text-decoration: underline
+
+.about__button:last-of-type
+  @media screen and (max-width: $mobile-large)
+    margin-bottom: 10px
+
+.about__photo-container
+  position: relative
+  width: 298px
+  margin-left: auto
+  margin-right: 113px
+  @media screen and (max-width: $mobile-large)
+    order: 1
+    margin-right: 0
+    margin-left: 0
+    margin-bottom: 18px
+    width: 100%
+  @media screen and (max-width: $mobile)
+    left: -10px;
+  &:before
+    content: ''
+    position: absolute
+    top: 19px
+    right: 0
+    width: 31px
+    height: 27px
+    background-image: url('/assets/img/heart.svg');
+    @media screen and (max-width: $mobile-large)
+      right: 70px
+    @media screen and (max-width: $mobile)
+      top: -28px
+      right: 0
+
+.about__img
+  margin: 0 auto
+  margin-top: 32px
+  margin-bottom: 23px
+  @media screen and (max-width: $mobile)
+    margin-top: -15px
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 24px;
+
+.about__photo-header
+  margin-top: 0
+  margin-bottom: 7px
+  font-weight: 500
+  font-size: 20px
+  line-height: 22px
+  text-align: center
+
+.about__photo-text
+  display: block
+  margin-bottom: 8px
+  font-weight: normal
+  font-size: 16px
+  line-height: 21px
+  text-align: center
+
+.about__link
+  display: block
+  font-weight: 500
+  font-size: 16px
+  line-height: 21px
+  text-align: center
+  color: #5286EC
+  &:hover
+    text-decoration: underline

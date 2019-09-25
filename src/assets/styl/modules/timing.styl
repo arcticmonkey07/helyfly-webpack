@@ -1,0 +1,184 @@
+.timing
+  margin-bottom: 82px
+  @media screen and (max-width: $mobile-large)
+    margin-bottom: 45px
+  @media screen and (max-width: $mobile)
+    margin-bottom: 146px
+
+.timing__header
+  margin-bottom: 26px
+  font-weight: 500
+  font-size: 23px
+  line-height: 29px
+  @media screen and (max-width: $mobile)
+    margin-top: 0
+    margin-bottom: 40px
+    font-size: 30px
+    line-height: 31px
+    text-align: center
+
+.timing__container
+  width: 770px
+  height: 458px
+  border: 1px solid #C7C7C7
+  box-sizing: border-box
+  @media screen and (max-width: $tablet)
+    width: 730px
+  @media screen and (max-width: $mobile-large)
+    width: 385px
+  @media screen and (max-width: $mobile)
+    width: 290px
+    height: 500px
+    border-bottom: none
+
+.timing__date-container
+  height: 72px
+  border-bottom: 0.5px solid #C7C7C7
+  @media screen and (max-width: $mobile-large)
+    display: flex
+  @media screen and (max-width: $mobile)
+    height: 58px
+
+.timing__date
+  position: relative
+  display: inline-block
+  margin: 0
+  margin-top: 26px
+  margin-right: 16px
+  margin-left: 29px
+  font-weight: normal
+  font-size: 20px
+  line-height: 26px
+  @media screen and (max-width: $mobile)
+    margin-top: 18px
+    margin-left: 44px
+
+.timing__date-button
+  position: relative
+  display: inline-block
+  width: 35px
+  height: 35px
+  border: 0.5px solid #C4C4C4
+  box-sizing: border-box
+  border-radius: 3px
+  background-color: transparent
+  vertical-align: middle
+  cursor: pointer
+  @media screen and (max-width: $mobile-large)
+    margin-left: auto
+    margin-top: 18px
+    margin-right: 20px
+  @media screen and (max-width: $mobile)
+    display: none
+  &:before
+    content: ''
+    position: absolute
+    top: 8px
+    left: 8px
+    width: 18px
+    height: 18px
+    background-image: url('/assets/img/calendar.svg')
+    background-repeat: no-repeat
+  &:hover
+    background-color: #dbdbdb
+
+.timing__info-container
+  display: flex
+  height: 111px
+  padding-top: 18px
+  padding-left: 28px
+  padding-right: 30px
+  border-bottom: 0.5px solid #C7C7C7
+  @media screen and (max-width: $mobile)
+    flex-direction: column
+    height: 192px
+    padding-top: 28px
+    padding-left: 18px
+
+.timing__info-container--bottom
+  border-bottom: none
+  @media screen and (max-width: $mobile)
+    border-bottom: 0.5px solid #C7C7C7
+
+.timing__time
+  display: block
+  margin-bottom: 10px
+  font-weight: normal
+  font-size: 18px
+  line-height: 26px
+  @media screen and (max-width: $mobile)
+    margin-bottom: 11px
+
+.timing__price
+  display: block
+  margin-bottom: 9px
+  font-weight: 600
+  font-size: 18px
+  line-height: 22px
+
+.timing__text
+  display: block
+  font-weight: normal;
+  font-size: 20px
+  line-height: 26px
+
+.timing__info-button
+  margin-top: 22px
+  margin-left: auto
+  width: 129px
+  height: 50px
+  font-weight: 500
+  font-size: 16px
+  line-height: 17px
+  color: #FC9B09
+  background-color: transparent
+  border: 2px solid #FC9B09
+  box-sizing: border-box
+  border-radius: 3px
+  cursor: pointer
+  @media screen and (max-width: $mobile)
+    margin-top: 21px
+    margin-left: 0
+  &:hover
+    background-color: #FC9B09;
+    color: #ffffff;
+
+.timing__info-reviews-container
+  margin-top: 19px
+  margin-left: 28px
+  @media screen and (max-width: $mobile-large)
+    margin-top: 0
+    margin-left: 0
+  @media screen and (max-width: $mobile)
+    position: relative
+    left: -1px
+    width: 290px
+    height: 99px
+    padding-top: 9px
+    padding-left: 18px
+    box-sizing border-box
+    border: 1px solid #C7C7C7
+    border-top: none
+
+.timing__info-reviews
+  @media screen and (max-width: $mobile-large)
+    padding-top: 15px
+    padding-left: 70px
+  &:before
+    @media screen and (max-width: $mobile-large)
+      top: 40px
+      left: 20px
+
+.timing__stars-container
+  margin-top: 35px
+  margin-left: 16px
+  @media screen and (max-width: $mobile-large)
+    margin-top: 0
+    margin-left: 70px
+  @media screen and (max-width: $mobile)
+    margin-top: -7px
+    margin-left: 49px
+
+.timing__star
+  @media screen and (max-width: $mobile)
+    margin-right: 4px

@@ -1,0 +1,19 @@
+include ../utils/mixins
+block variables
+
+doctype html
+html(lang='ru-RU')
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width,initial-scale=1")
+		meta(name="description", content=description)
+		title #{title}
+		link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css")
+		link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css")
+	body
+		include ../includes/modules/header
+		include ../includes/modules/content
+		include ../includes/modules/footer
+		include ../includes/modules/modal-reserve
+		script(src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js")
